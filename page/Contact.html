@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>IntroduceMyself</title>
+  <link rel="stylesheet" type="text/css" href="../bootstrap-4.6.2-dist/css/bootstrap.min.css">
+  <script src="../bootstrap-4.6.2-dist/js/bootstrap.min.js"> </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="IntroduceMyself.html">自己紹介</a>
+          <li class="nav-item">
+            <a class="nav-link active" href="Hobby.html">私の興味</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">お問い合わせ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Photo.html">私の写真</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="MessageBoard.html">メッセージ</a>
+          </li>
+
+          <form>
+            <div class="row">
+              <div class="col">
+            <label for="name"><b>お名前:</b></label>
+              </div>
+              <div class="col">
+            <input type="text" placeholder="ひらがな" id="name"> <br>
+          </div>
+            <label for="email"><b>メールアドレス:</b></label>
+            <input type="email" id="email" placeholder="@gmail.com"><br>
+            <label for="tel"><b>お電話:</b></label><br>
+            <input type="tel" id="tel" placeholder="ハイフンなし11桁数字"><br>
+            <button type="button" id="btn">電話番号チェック</button>
+          <br>
+            </td>
+            </tr>
+            <tr height="150">
+              <td align="center">
+                <label for="text"><b>ご質問内容:</b></label><br>
+              </td>
+              <td align="center">
+                <textarea id="text" placeholder="２００字以内"></textarea><br>
+                <br>
+            <tr height="150">
+              <td align="center">
+                <div href="subPageContact.html"><input id="button1" type="submit" value="提出"></div>
+                <script>
+                  document.getElementById("button1").addEventListener("click", function () {
+                    window.alert("提出完了");
+                  });
+                </script>
+          </form>
+          </td>
+          </tr>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
